@@ -2,11 +2,12 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import herobg from "../public/hero-bg.png";
 import Bird from "../public/bird2.jpg";
+import Link from "next/link";
 
 export default function Hero() {
   return (
     <section
-      className="w-full min-h-screen bg-cover bg-left lg:bg-center flex items-center justify-center px-6 py-16 pt-40 lg:pt-24 left-0 right-0 xl:pt-24"
+      className="w-full min-h-screen bg-cover bg-left lg:bg-center flex items-center justify-center px-6 py-16 pt-40 lg:pt-24 left-0 right-0 xl:pt-24 pb-24"
       style={{
         backgroundImage: `url(${herobg.src})`,
       }}
@@ -21,9 +22,11 @@ export default function Hero() {
             Let our intelligent bird-spotting system help you identify, explore, and learn everything about your feathered friends with just a glance.
           </p>
           <div className="flex justify-center lg:justify-start">
+            <Link href="/dashboard">
             <Button className="bg-green-600 font-nunito text-xl hover:bg-green-700 text-white text-base md:text-lg px-6 py-4 rounded-[20px] ">
               Get Started <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
+            </Link>
           </div>
         </div>
 
