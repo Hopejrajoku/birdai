@@ -16,7 +16,7 @@ export default function DashboardPage() {
       {/* Header */}
       <Header />
         {/* Main Content */}
-        <main className="p-6 flex flex-col justify-center items-center pt-[20vh] ">
+        <main className="p-6 flex flex-col justify-center items-center ">
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl font-bold leading-tight tracking-tight gradient-title gradient font-roboto mt-6 mb-2">Dashboard</h2>
           <img src="/logo.png" className="w-24 h-24 mb-2" alt="Bird Icon" />
           <p className="text-center text-gray-600 max-w-sm mb-6">

@@ -4,7 +4,7 @@ import React from 'react'
 const page = () => {
   return (
     <div
-    style={{ paddingBottom: "30rem"}}
+    style={{ paddingBottom: "2rem"}}
     
     >
       <SignIn 
