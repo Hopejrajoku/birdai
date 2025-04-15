@@ -11,5 +11,19 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url      = env("NEXT_PUBLIC_SUPABASE_URL")
+  directUrl = env("NEXT_PUBLIC_SUPABASE_ANON_KEY")
+}
+
+
+model BirdScan {
+  id          String   @id @default(uuid())
+  user_id     String
+  image_url   String
+  bird_name   String
+  confidence  Float
+  description String
+  detected_at DateTime @default(now())
+  
+  @@map("bird_scans")
 }
